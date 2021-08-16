@@ -1,5 +1,5 @@
 import React from "react"
-import Video from "./Video"
+import VideoItem from "../VideoItem/VideoItem"
 
 const VideoList = (props) => {
   // console.log("썸네일", props.videoList[0].snippet.thumbnails.medium.url)
@@ -7,7 +7,8 @@ const VideoList = (props) => {
     <>
       {props.videoList.map((item) => {
         return (
-          <Video
+          <VideoItem
+            key={item.id}
             title={item.snippet.title}
             thumbnail={item.snippet.thumbnails.medium}
             channelTitle={item.snippet.channelTitle}

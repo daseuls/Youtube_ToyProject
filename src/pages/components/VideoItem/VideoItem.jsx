@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Video(props) {
+export default function VideoItem(props) {
   // console.log(props.url)
   return (
     <li>
